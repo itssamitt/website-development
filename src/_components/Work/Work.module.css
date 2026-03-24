@@ -1,0 +1,61 @@
+.work {
+    width: 100%;
+    padding: 3rem 10rem;
+}
+
+.worktitle {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.splidemain {
+    width: 100%;
+    margin-top: 2rem;
+    position: relative;
+}
+
+/* image box */
+.imagebox {
+    border: 2rem solid black;
+    padding: 5px;
+}
+
+/* image */
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* arrows below slider */
+.splidemain :global(.splide__arrows) {
+    position: absolute;
+    bottom: -5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.splidemain :global(.splide__arrow) {
+    position: relative;
+    width: 2.5rem;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-color: #FFFF00;
+}
+
+@media(max-width:1300px) {
+    .work {
+        padding: 3rem 3rem;
+    }
+}
+@media(max-width:676px) {
+    .imagebox {
+    border: 0.75rem solid black;
+}
+    .work {
+        padding: 3rem 0rem;
+    }
+}

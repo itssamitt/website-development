@@ -1,0 +1,144 @@
+.storiesmain {
+    width: 100%;
+    padding: 5rem 14rem;
+}
+
+.storiesmaintitle {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.storiesmainbox {
+    width: 100%;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.statsimage {
+    width: 35%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.statsside {
+    width: 65%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 3rem;
+    border-radius: 7px;
+    gap: 1.5rem;
+}
+
+.statssidetitle {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.statsmainboxes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.statseachboxes {
+    width: 23%;
+    background-color: #3E3E3E;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.statnumber {
+    background-color: #FAE500;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.statname {
+    text-align: center;
+    color: white;
+    font-size: 0.95rem;
+}
+
+.laststatpara {
+    background-color: #FAE500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width:1300px) {
+    .storiesmain {
+        padding: 5rem 4rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .storiesmainbox {
+        flex-direction: column;
+    }
+
+    .statsimage {
+        width: 100%;
+    }
+
+    .statsside {
+        width: 100%;
+    }
+}
+
+@media (max-width:676px) {
+
+    .storiesmain {
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+    .statsside{
+        padding: 2rem 3rem;
+    }
+
+    .statseachboxes {
+        width: 25%;
+        padding: 0.6rem;
+        border-radius: 5px;
+    }
+
+    .statnumber {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        width: 100%;
+        text-align: center;
+    }
+    .statssidetitle {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+    .statname {
+        font-size: 0.8rem;
+    }
+
+    .laststatpara {
+        padding: 0.5rem 1rem;
+        font-size: 1.15rem;
+        font-weight: 600;
+    }
+}

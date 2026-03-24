@@ -1,0 +1,72 @@
+.teammain {
+    width: 100%;
+    padding: 3rem 12rem;
+}
+
+.teammaintitle {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.teamimagesbox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.teamperbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.teamperbox img {
+    width: 100%;
+}
+
+.teamperimgdetail {
+    width: 100%;
+    background-color: black;
+    padding: 1rem;
+}
+
+.teampername {
+    color: white;
+    font-weight: 700;
+}
+
+.teamperdetail {
+    color: rgb(192, 192, 192);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+@media(max-width:1300px) {
+    .teammain {
+        padding: 3rem 3rem;
+    }
+}
+
+@media(max-width:1200px) {
+    .teammain {
+        padding: 3rem 2rem;
+    }
+
+    .teamimagesbox {
+        gap: 1rem;
+    }
+}
+@media(max-width:676px) {
+    .teammain {
+        padding: 3rem 1rem;
+    }
+
+    .teamimagesbox {
+        gap: 1.2rem;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+}

@@ -1,0 +1,53 @@
+.testimonialsection{
+    width: 100%;
+    padding: 4rem 0;
+}
+.testimonialtitle{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.morquee{
+    margin-top: 2rem;
+}
+.pertestibox{
+    width: 20rem;
+    height: 100%;
+    background-color: black;
+    padding: 1.7rem;
+    margin-left: 1.5rem;
+    border-radius: 5px;
+}
+.pertestiupper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.pertestiupper img{
+    width: 20%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.testidetails{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.testiname{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+.testiposition{
+    font-size: 0.95rem;
+    color: rgb(199, 199, 199);
+}
+.realtesti{
+    color: rgb(194, 194, 194);
+    margin-top: 2rem;
+    font-size: 1.05rem;
+    line-height: 1.5rem;
+}

@@ -1,0 +1,115 @@
+.services {
+    width: 100%;
+    padding: 3rem 2rem;
+    background-color: yellow;
+}
+
+.servicestitle {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.servicesbox {
+    width: 100%;
+    padding: 0 10rem;
+    margin-top: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.servicesboxeach {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    background-color: white;
+    box-shadow: 1px 1px 16px -2px #000000;
+}
+
+.servicesboxeach:hover {
+    box-shadow: 1px 1px 16px 2px #000000;
+}
+
+.servicesboxtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.servicesboxpara {
+    margin-top: 1.5rem;
+    font-size: 1.05rem;
+    color: rgb(104, 104, 104);
+    line-height: 1.7rem;
+    text-align: justify;
+}
+
+.servicespoints {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+}
+
+.firsttop {
+    margin-top: 2rem;
+}
+
+.servicespoints i {
+    font-size: 1.1rem;
+}
+
+.servicespoints p {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: rgb(62, 62, 62);
+}
+
+.servicebtndiv {
+    width: 100%;
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.servicecontactbtn {
+    padding: 0.7rem 1rem;
+    color: black;
+    background-color: yellow;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.link{
+    text-decoration: none;
+}
+@media (max-width: 1300px) {
+    .services {
+        padding: 3rem 2rem;
+    }
+
+    .servicesbox {
+        padding: 0 2rem;
+    }
+}
+@media (max-width: 900px) {
+    .services {
+        padding: 3rem 2rem;
+    }
+
+    .servicesbox {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 0rem;
+    }
+}
+@media (max-width: 676px) {
+    .services {
+        padding: 3rem 1.5rem;
+    }
+
+    .servicesbox {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 0rem;
+    }
+}

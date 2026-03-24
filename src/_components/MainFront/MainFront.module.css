@@ -1,0 +1,156 @@
+.mainfont {
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+
+.autoimage {
+    width: 371px;
+}
+
+.companiesmorq {
+    padding: 0.5rem 0;
+    background-color: black;
+    position: relative;
+    top: -12px;
+    z-index: 5;
+}
+
+.autocompanies {
+    width: 10rem;
+    padding: 0 0.5rem;
+}
+
+.popupmain {
+    width: 50%;
+    height: 85%;
+    background-color: white;
+    border: 5px solid black;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popupmainmiddle {
+    width: 60%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.popupmainmiddletitle {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.popupmainmiddlebox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.popupmainmiddleboximg {
+    width: 25%;
+}
+
+.popupmainmiddlecta {
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #10b228;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+.link{
+    text-decoration: none;
+}
+
+@media (max-width:1200px) {
+    .popupmain {
+        width: 100%;
+        position: relative;
+        padding: 0rem;
+    }
+
+    .popupmainmiddle {
+        width: 100%;
+        padding: 4rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .popupmainmiddletitle {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .popupmainmiddlebox {
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+
+    .popupmainmiddleboximg {
+        width: 30%;
+    }
+
+    .popupmainmiddlecta {
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width:676) {
+    .autoimage {
+        width: 224px;
+    }
+
+    .popupmainmiddle {
+        width: 100%;
+        padding: 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .popupmainmiddlebox {
+        font-size: 1rem;
+        justify-content: center;
+    }
+
+    .popupmainmiddletitle {
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        line-height: 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .popupmainmiddleboximg {
+        width: 35%;
+    }
+    .popupmainmiddlecta {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+.companiesmorq {
+    padding: 0rem 0;
+}
+}

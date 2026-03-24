@@ -1,0 +1,126 @@
+.highlightsection {
+    width: 100%;
+    padding: 4rem 1rem;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.highlightstitle {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.highlightsvideos {
+    width: 100%;
+    margin-top: 3rem;
+    padding: 0 10rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.testimonialvideo {
+    width: 100%;
+}
+
+
+.videoContainer {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.videoFallback {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.testimonialvideo {
+    width: 100%;
+    display: block;
+}
+
+/* Play Button Overlay */
+.playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* Let clicks pass through to the container */
+}
+
+.playButton.hide {
+    opacity: 0;
+}
+
+/* Simple CSS Triangle for the Play Icon */
+.playIcon {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid white;
+    margin-left: 5px;
+}
+
+/* Show button again on hover even if playing (optional) */
+.videoContainer:hover .playButton {
+    opacity: 1;
+}
+.overlap {
+  width: 100%;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.overlap::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, and Opera */
+}
+
+@media(max-width:1300px) {
+    .highlightsvideos {
+        margin-top: 2rem;
+        padding: 2.5rem;
+    }
+
+}
+@media(max-width:1200px) {
+    .highlightsvideos {
+        width: 180%;
+        margin-top: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .testimonialvideo {
+       width: 100%;
+    }
+}
+@media(max-width:676px) {
+    .highlightsvideos {
+        width: 300%;
+        margin-top: 2rem;
+        padding: 0rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

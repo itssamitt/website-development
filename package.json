@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,11 +10,16 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide": "^4.1.4",
     "next": "16.0.10",
+    "nodemailer": "^8.0.2",
     "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "react-dom": "19.2.1",
+    "react-fast-marquee": "^1.6.5"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.15.9",
     "eslint": "^9",
     "eslint-config-next": "16.0.10"
   }
