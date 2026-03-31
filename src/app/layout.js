@@ -36,6 +36,23 @@ export default function RootLayout({ children }) {
             gtag('config', 'AW-17939214773');
           `}
         </Script>
+        <Script id="google-ads-conversion" strategy="afterInteractive">
+          {`
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                'send_to': 'AW-17939214773/JOIoCLOzopEcELXjiupC',
+                'event_callback': callback
+              });
+              return false;
+            }
+            window.gtag_report_conversion = gtag_report_conversion;
+          `}
+        </Script>
         {/* Fonts */}
         <link
           rel="stylesheet"
