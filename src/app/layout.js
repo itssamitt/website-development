@@ -53,33 +53,6 @@ export default function RootLayout({ children }) {
             window.gtag_report_conversion = function(url) {
               return window.trackAdsmanConversion('manual', url);
             };
-
-            document.addEventListener('click', function (event) {
-              var target = event.target;
-              if (!target) return;
-              var link = target.closest('a[href]');
-              if (!link) return;
-
-              var href = (link.getAttribute('href') || '').toLowerCase();
-              if (
-                href.indexOf('wa.me') !== -1 ||
-                href.indexOf('api.whatsapp.com') !== -1 ||
-                href.indexOf('wa.link') !== -1 ||
-                href.indexOf('whatsapp') !== -1
-              ) {
-                window.trackAdsmanConversion('whatsapp_click');
-              }
-
-              if (href.indexOf('tel:') === 0) {
-                window.trackAdsmanConversion('call_click');
-              }
-            }, true);
-
-            document.addEventListener('submit', function (event) {
-              var form = event.target;
-              if (!form || form.tagName !== 'FORM') return;
-              window.trackAdsmanConversion('form_submit');
-            }, true);
           `}
         </Script>
         {/* Fonts */}

@@ -29,6 +29,12 @@ const Contact = () => {
     });
   };
 
+  const handleCallClick = () => {
+    if (typeof window !== "undefined" && window.trackAdsmanConversion) {
+      window.trackAdsmanConversion("call_click");
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -61,6 +67,10 @@ const Contact = () => {
         throw new Error(errorMessage);
       }
 
+      if (typeof window !== "undefined" && window.trackAdsmanConversion) {
+        window.trackAdsmanConversion("form_submit");
+      }
+
       setStatus("success");
       setStatusMessage(
         "Thank you for contacting us! We will get back to you soon.",
@@ -87,7 +97,11 @@ const Contact = () => {
           <h2 className={style.contacttitle}>Contact Us</h2>
           <p className={style.contacttitlepara}>
             or call us on
-            <a href="tel:+916299188118" className={style.contactCallLink}>
+            <a
+              href="tel:+916299188118"
+              className={style.contactCallLink}
+              onClick={handleCallClick}
+            >
               <span className={style.phoneIcon} role="img" aria-label="phone">
                 📞
               </span>

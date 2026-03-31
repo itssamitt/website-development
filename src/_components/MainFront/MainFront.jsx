@@ -1,9 +1,17 @@
+"use client";
+
 import React from "react";
 import Marquee from "react-fast-marquee";
 import style from "./MainFront.module.css";
 import Link from "next/link";
 
 const MainFront = () => {
+  const handleWhatsAppClick = () => {
+    if (typeof window !== "undefined" && window.trackAdsmanConversion) {
+      window.trackAdsmanConversion("whatsapp_click");
+    }
+  };
+
   return (
     <>
       <div className={style.mainfont}>
@@ -24,6 +32,7 @@ const MainFront = () => {
             <Link
               className={style.link}
               href="https://wa.link/twyj06"
+              onClick={handleWhatsAppClick}
             >
               <p className={style.popupmainmiddlecta}>Chat On WhatsApp</p>
             </Link>
