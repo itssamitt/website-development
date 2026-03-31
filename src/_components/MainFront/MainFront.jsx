@@ -24,8 +24,6 @@ const MainFront = () => {
             <Link
               className={style.link}
               href="https://wa.link/twyj06"
-              data-whatsapp-track
-              data-whatsapp-label="main_whatsapp_1"
             >
               <p className={style.popupmainmiddlecta}>Chat On WhatsApp</p>
             </Link>

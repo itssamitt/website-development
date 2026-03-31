@@ -32,13 +32,6 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (typeof window !== "undefined" && typeof window.gtag === "function") {
-      window.gtag("event", "form_submit", {
-        event_category: "lead",
-        event_label: "contact_form",
-      });
-    }
-
     setStatus("sending");
     setStatusMessage("");
 
@@ -94,18 +87,7 @@ const Contact = () => {
           <h2 className={style.contacttitle}>Contact Us</h2>
           <p className={style.contacttitlepara}>
             or call us on
-            <a
-              href="tel:+916299188118"
-              className={style.contactCallLink}
-              onClick={() => {
-                if (typeof window !== "undefined" && typeof window.gtag === "function") {
-                  window.gtag("event", "call_click", {
-                    event_category: "contact",
-                    event_label: "contact_call_button",
-                  });
-                }
-              }}
-            >
+            <a href="tel:+916299188118" className={style.contactCallLink}>
               <span className={style.phoneIcon} role="img" aria-label="phone">
                 📞
               </span>

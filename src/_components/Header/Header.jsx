@@ -13,18 +13,7 @@ const Header = () => {
         <Link className={style.navlink} href="#work">
           Portfolio
         </Link>
-        <Link
-          className={`${style.navlink} ${style.contact}`}
-          href="tel:6299188118"
-          onClick={() => {
-            if (typeof window !== "undefined" && typeof window.gtag === "function") {
-              window.gtag("event", "call_click", {
-                event_category: "contact",
-                event_label: "header_call_button",
-              });
-            }
-          }}
-        >
+        <Link className={`${style.navlink} ${style.contact}`} href="tel:6299188118">
           CALL US
         </Link>
       </nav>

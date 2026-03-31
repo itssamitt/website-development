@@ -37,8 +37,6 @@ const Services = () => {
             <Link
               className={style.link}
               href="https://wa.link/twyj06"
-              data-whatsapp-track
-              data-whatsapp-label="services_whatsapp_1"
             >
               <div className={style.servicebtndiv}>
                 <p className={style.servicecontactbtn}>CONTACT US</p>
@@ -72,8 +70,6 @@ const Services = () => {
             <Link
               className={style.link}
               href="https://wa.link/twyj06"
-              data-whatsapp-track
-              data-whatsapp-label="services_whatsapp_2"
             >
               <div className={style.servicebtndiv}>
                 <p className={style.servicecontactbtn}>CONTACT US</p>
@@ -106,8 +102,6 @@ const Services = () => {
             <Link
               className={style.link}
               href="https://wa.link/twyj06"
-              data-whatsapp-track
-              data-whatsapp-label="services_whatsapp_3"
             >
               <div className={style.servicebtndiv}>
                 <p className={style.servicecontactbtn}>CONTACT US</p>

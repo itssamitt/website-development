@@ -1,5 +1,4 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,56 +23,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* ✅ GA4 Script */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-4TY8M4B8E3"
-          strategy="afterInteractive"
-        />
-        <Script id="google-gtag" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            window.gtag = function(){window.dataLayer.push(arguments);}
-            
-            window.gtag('js', new Date());
-            window.gtag('config', 'G-4TY8M4B8E3');
-          `}
-        </Script>
-
-        {/* ✅ WhatsApp Click Tracking */}
-        <Script id="whatsapp-click-tracker" strategy="afterInteractive">
-          {`
-            function trackWhatsAppClick(url, eventLabel) {
-              var callback = function () {
-                if (typeof url === 'string') window.location = url;
-              };
-
-              if (typeof window.gtag === 'function') {
-                window.gtag('event', 'whatsapp_click', {
-                  event_category: 'contact',
-                  event_label: eventLabel || 'whatsapp_click',
-                  event_callback: callback,
-                  event_timeout: 2000
-                });
-              } else {
-                callback();
-              }
-            }
-
-            document.addEventListener('click', function (event) {
-              var target = event.target.closest('[data-whatsapp-track]');
-              if (!target) return;
-
-              var url = target.getAttribute('href');
-              var label = target.getAttribute('data-whatsapp-label') || 'whatsapp_click';
-
-              if (!url) return;
-
-              event.preventDefault();
-              trackWhatsAppClick(url, label);
-            });
-          `}
-        </Script>
-
         {/* Fonts */}
         <link
           rel="stylesheet"
